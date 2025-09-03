@@ -63,8 +63,8 @@ class _SuTakipHomePageState extends State<SuTakipHomePage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 SizedBox(
-                  height: 250,
-                  width: 250,
+                  height: 280,
+                  width: 280,
                   child: Stack(
                     fit: StackFit.expand,
                     children: [
@@ -174,18 +174,17 @@ class SuButonu extends StatelessWidget {
           const SizedBox(height: 6),
 
           // Miktar yazısı
-          Text("$miktar ml",
-          textAlign: TextAlign.center,
-          style: const TextStyle(
-            color: Colors.blue,
-            fontWeight: FontWeight.bold,
-            fontSize: 16,
-          ),)
-          
+          Text(
+            "$miktar ml",
+            textAlign: TextAlign.center,
+            style: const TextStyle(
+              color: Colors.blue,
+              fontWeight: FontWeight.bold,
+              fontSize: 16,
+            ),
+          ),
         ],
       ),
     );
   }
 }
-
-
