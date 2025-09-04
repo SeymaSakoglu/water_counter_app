@@ -34,7 +34,7 @@ class _SuTakipHomePageState extends State<SuTakipHomePage> {
     setState(() {
       icililenMiktar += miktar;
 
-      if (icililenMiktar < gunlukHedef && icililenMiktar % 500 == 0) {
+      if (icililenMiktar < gunlukHedef || icililenMiktar % 500 == 0 && icililenMiktar % 200 == 0 && icililenMiktar % 300 == 0) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text("Su içmeyi unutma 💧"),
