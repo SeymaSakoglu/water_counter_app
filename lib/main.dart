@@ -164,12 +164,26 @@ class SuButonu extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           // Bardak görseli
-          Image.asset(
-            'assets/images/glass.png',
-            width: 100,
-            height: 100,
-            fit: BoxFit.contain,
-          ),
+          if (miktar == 200)
+            Image.asset(
+              'assets/images/glass.png',
+              width: 80,
+              height: 80,
+              fit: BoxFit.contain),
+          
+          if (miktar == 300)
+            Image.asset(
+              'assets/images/glass.png',
+              width: 100,
+              height: 100,
+              fit: BoxFit.contain),
+
+          if (miktar == 500)
+            Image.asset(
+              'assets/images/bottle.png',
+              width: 100,
+              height: 150,
+              fit: BoxFit.fitHeight),
 
           const SizedBox(height: 6),
 
